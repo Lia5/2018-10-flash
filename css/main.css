@@ -357,9 +357,6 @@ p {
   visibility: visible;
   /*  Делаем иконки полностью не прозрачными  */
 }
-.animated {
-  visibility: visible;
-}
 .header-wrap {
   background-color: rgba(0, 0, 0, 0.82);
   position: fixed;
