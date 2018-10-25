@@ -66,9 +66,14 @@ document.addEventListener('DOMContentLoaded', function(){
       if((positionEl2-scrollTop) < winH) {
         this.classList.add(anim1);
         this.classList.add('animated');
+        this.classList.remove('none');
         if ((elH-scrollTop) < winH/2) {
             this.classList.remove(anim1);
             this.classList.add(anim2);
+            setTimeout (function (){
+                this.classList.add('none');
+            }, 3000);
+            
         } else {
             this.classList.remove(anim2);
         }

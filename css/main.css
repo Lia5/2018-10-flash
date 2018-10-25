@@ -357,6 +357,9 @@ p {
   visibility: visible;
   /*  Делаем иконки полностью не прозрачными  */
 }
+.none {
+  display: none;
+}
 .header-wrap {
   background-color: rgba(0, 0, 0, 0.82);
   position: fixed;
@@ -758,6 +761,7 @@ p {
   padding-bottom: 20px;
   margin-top: 20px;
   border-bottom: 11px solid rgba(243, 247, 247, 0.5);
+  overflow-x: hidden;
 }
 .program__blocks--brilliant {
   padding-left: 512px;
