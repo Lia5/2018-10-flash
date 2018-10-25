@@ -1,5 +1,7 @@
 # 2018-10-test
 
+my adaptive and animations
+
 <p><a href="https://lia5.github.io/2018-10-flash/index.html">https://lia5.github.io/2018-10-flash/index.html</a></p>
 <p><a href="https://lia5.github.io/2018-10-flash/reg_1step.html">https://lia5.github.io/2018-10-flash/reg_1step.html</a></p>
 <p><a href="https://lia5.github.io/2018-10-flash/reg_1step_next.html">https://lia5.github.io/2018-10-flash/reg_1step_next.html</a></p>
