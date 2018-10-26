@@ -597,6 +597,9 @@
   .program__blocks-right {
     width: 100%;
   }
+  .benefits__app a:first-child {
+    margin-right: 0;
+  }
   /*cabinet*/
   .cabinet {
     margin-top: 100px;

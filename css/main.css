@@ -628,6 +628,7 @@ p {
   margin-top: 22px;
 }
 .functions__list .block__icon {
+  min-width: 80px;
   width: 80px;
   height: 80px;
   background-repeat: no-repeat;
@@ -5482,6 +5483,9 @@ ul.peppermint-dots > li.peppermint-active-dot > span {
 @media only screen and (max-width: 420px) {
   .program__blocks-right {
     width: 100%;
+  }
+  .benefits__app a:first-child {
+    margin-right: 0;
   }
   /*cabinet*/
   .cabinet {
