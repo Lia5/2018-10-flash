@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
 //animation
 
+  var body = document.querySelector('.body');
+if (body.classList.contains("body-index")){
     let el1 = document.querySelector('.functions__list');
     let el2 = document.querySelector('.ways__bottom-wrap ');
     let el3 = document.querySelector('.ways__bottom-wrap--right');
@@ -18,6 +20,16 @@ document.addEventListener('DOMContentLoaded', function(){
     let el6 = document.querySelector('.program__blocks--silver .program__blocks-img');
     let el7 = document.querySelector('.program__blocks--bronze .program__blocks-img');
     let el8 = document.querySelector('.container--defence');
+    window.addEventListener('scroll', myAnim.bind(el1, el1, 'fadeInRight', 'fadeOutDown'));
+    window.addEventListener('scroll', myAnim.bind(el2, el2, 'fadeInLeft', 'fadeOutDown'));
+    window.addEventListener('scroll', myAnim.bind(el3, el3, 'fadeInRight', 'fadeOutDown'));
+    window.addEventListener('scroll', myAnim.bind(el4, el4, 'fadeInLeft', 'fadeOutRight'));
+    window.addEventListener('scroll', myAnim.bind(el5, el5, 'fadeInLeft', 'fadeOutRight'));
+    window.addEventListener('scroll', myAnim.bind(el6, el6, 'fadeInLeft', 'fadeOutRight'));
+    window.addEventListener('scroll', myAnim.bind(el7, el7, 'fadeInLeft', 'fadeOutRight'));
+    window.addEventListener('scroll', myAnim.bind(el8, el8, 'fadeInUp', 'zoomOutUp'));
+}
+if (body.classList.contains("body-sequence")){
     let el9 = document.querySelector('.sequence__block--one .sequence__img');
     let el10 = document.querySelector('.sequence__block--two .sequence__img');
     let el11 = document.querySelector('.sequence__block--three .sequence__img');
@@ -31,16 +43,6 @@ document.addEventListener('DOMContentLoaded', function(){
     let el19 = document.querySelector('.sequence__block--five .sequence__text');
     let el20 = document.querySelector('.sequence__block--six .sequence__text');
 
-
-
-    window.addEventListener('scroll', myAnim.bind(el1, el1, 'fadeInRight', 'fadeOutDown'));
-    window.addEventListener('scroll', myAnim.bind(el2, el2, 'fadeInLeft', 'fadeOutDown'));
-    window.addEventListener('scroll', myAnim.bind(el3, el3, 'fadeInRight', 'fadeOutDown'));
-    window.addEventListener('scroll', myAnim.bind(el4, el4, 'fadeInLeft', 'fadeOutRight'));
-    window.addEventListener('scroll', myAnim.bind(el5, el5, 'fadeInLeft', 'fadeOutRight'));
-    window.addEventListener('scroll', myAnim.bind(el6, el6, 'fadeInLeft', 'fadeOutRight'));
-    window.addEventListener('scroll', myAnim.bind(el7, el7, 'fadeInLeft', 'fadeOutRight'));
-    window.addEventListener('scroll', myAnim.bind(el8, el8, 'fadeInUp', 'fadeOutDown'));
     window.addEventListener('scroll', myAnim.bind(el9, el9, 'bounceIn', 'bounceOut'));
     window.addEventListener('scroll', myAnim.bind(el10, el10, 'rotateIn', 'rotateOut'));
     window.addEventListener('scroll', myAnim.bind(el11, el11, 'rotateIn', 'rotateOut'));
@@ -53,10 +55,7 @@ document.addEventListener('DOMContentLoaded', function(){
     window.addEventListener('scroll', myAnim.bind(el18, el18, 'zoomIn', 'slideOutUp'));
     window.addEventListener('scroll', myAnim.bind(el19, el19, 'zoomIn', 'slideOutUp'));
     window.addEventListener('scroll', myAnim.bind(el20, el20, 'zoomIn', 'slideOutUp'));
-
-
-
-
+}
 
     function myAnim(el, anim1, anim2) {
       let scrollTop = window.pageYOffset;
@@ -66,13 +65,13 @@ document.addEventListener('DOMContentLoaded', function(){
       if((positionEl2-scrollTop) < winH) {
         this.classList.add(anim1);
         this.classList.add('animated');
-        this.classList.remove('none');
+        // el.classList.remove('none');
         if ((elH-scrollTop) < winH/2) {
             this.classList.remove(anim1);
             this.classList.add(anim2);
-            setTimeout (function (){
-                this.classList.add('none');
-            }, 3000);
+            // setTimeout (function (){
+            //     el.classList.add('none');
+            // }, 1000);
             
         } else {
             this.classList.remove(anim2);
@@ -81,11 +80,6 @@ document.addEventListener('DOMContentLoaded', function(){
         this.classList.remove(anim1);
       }
     }
-
-	// $(".animation_1").animated("fadeInRight","fadeOutDown");
-    // $(".animation_2").animated("fadeInLeft","fadeOutDown");
-    // $(".animation_3").animated("fadeInUp","fadeOutDown");
-    // $(".animation_4").animated("fadeInLeft","fadeOutRight");
 
 });
 
