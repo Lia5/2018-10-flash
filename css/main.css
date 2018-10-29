@@ -494,7 +494,6 @@ p {
   background: url(../image/path-149.png) no-repeat center top;
   background-size: cover;
   right: 34px;
-  top: -20px;
 }
 .footer-wrap .footer__left {
   display: -webkit-box;
@@ -847,6 +846,10 @@ p {
 }
 .reg__form--custom {
   width: 492px;
+  padding: 52px 15px 75px;
+}
+.reg__form--custom .btn {
+  min-width: 160px;
 }
 .reg__form input,
 .reg__form select {
@@ -1038,7 +1041,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: auto;
+  height: 100vh;
 }
 .wrapper .content {
   display: -webkit-box;
@@ -5059,9 +5062,10 @@ ul.peppermint-dots > li.peppermint-active-dot > span {
     padding-right: 0;
   }
   .footer-wrap .footer::after {
-    position: static;
+    position: relative;
     width: 150px;
     height: 139px;
+    bottom: -48px;
   }
   .footer-wrap .footer__center {
     margin-right: 10px;
@@ -5089,6 +5093,7 @@ ul.peppermint-dots > li.peppermint-active-dot > span {
   }
   .cabinet__wrap {
     width: 100%;
+    margin-right: 12px;
   }
   .cabinet__col {
     width: 38%;
@@ -5178,6 +5183,8 @@ ul.peppermint-dots > li.peppermint-active-dot > span {
   .footer-wrap .footer::after {
     background-size: contain;
     width: 70px;
+    bottom: auto;
+    right: 0;
   }
   .footer-wrap .footer__center {
     max-width: 219px;
@@ -5400,6 +5407,11 @@ ul.peppermint-dots > li.peppermint-active-dot > span {
   .filter__buttons {
     padding: 0 20px;
   }
+  .map__services .list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   /*how_it_works*/
   .sequence__block {
     -webkit-box-orient: vertical;
@@ -5480,6 +5492,9 @@ ul.peppermint-dots > li.peppermint-active-dot > span {
   .cabinet__wrap {
     margin-top: 43px;
   }
+  .container--filter {
+    padding-top: 90px;
+  }
 }
 @media only screen and (max-width: 420px) {
   .program__blocks-right {
@@ -5491,6 +5506,14 @@ ul.peppermint-dots > li.peppermint-active-dot > span {
   /*cabinet*/
   .cabinet {
     margin-top: 100px;
+  }
+  /*reg*/
+  .reg__form--custom .buttons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .reg__form--custom .buttons input[type="submit"]:first-child {
+    margin-right: 0;
   }
 }
 @media only screen and (max-width: 378px) {
