@@ -20,9 +20,9 @@ if (body.classList.contains("body-index")){
     let el6 = document.querySelector('.program__blocks--silver .program__blocks-img');
     let el7 = document.querySelector('.program__blocks--bronze .program__blocks-img');
     let el8 = document.querySelector('.container--defence');
-    window.addEventListener('scroll', myAnim.bind(el1, el1, 'fadeInRight', 'fadeOutDown'));
-    window.addEventListener('scroll', myAnim.bind(el2, el2, 'fadeInLeft', 'fadeOutDown'));
-    window.addEventListener('scroll', myAnim.bind(el3, el3, 'fadeInRight', 'fadeOutDown'));
+    window.addEventListener('scroll', myAnim.bind(el1, el1, 'fadeInRight', 'zoomOut'));
+    window.addEventListener('scroll', myAnim.bind(el2, el2, 'fadeInLeft', 'zoomOut'));
+    window.addEventListener('scroll', myAnim.bind(el3, el3, 'fadeInRight', 'zoomOut'));
     window.addEventListener('scroll', myAnim.bind(el4, el4, 'fadeInLeft', 'fadeOutRight'));
     window.addEventListener('scroll', myAnim.bind(el5, el5, 'fadeInLeft', 'fadeOutRight'));
     window.addEventListener('scroll', myAnim.bind(el6, el6, 'fadeInLeft', 'fadeOutRight'));
